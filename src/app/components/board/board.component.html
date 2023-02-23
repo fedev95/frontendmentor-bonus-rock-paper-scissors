@@ -1,0 +1,14 @@
+<div class="container d-flex align-items-center justify-content-center py-4 m-auto">
+  <div class="row flex-grow-1 justify-content-center">
+    <div class="col-12 p-0">
+      <div class="m-auto text-light tablero position-relative">
+        <img class="img-fluid w-100 m-auto" src="../../../assets/images/bg-pentagon.svg" alt="background">
+        <ng-container *ngFor="let hand of hands">
+          <div (click)="setPlayerHand(hand)" role="button" id="{{hand.id}}" class="ficha-container position-absolute">
+            <app-hand [hand]="hand"></app-hand>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

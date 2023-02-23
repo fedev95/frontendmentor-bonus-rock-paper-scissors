@@ -1,0 +1,35 @@
+.ficha-border {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding-bottom: 5%;
+}
+
+.ficha {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 11%;
+}
+
+.ficha-centro {
+  background-color: rgb(224, 224, 224);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.ficha-centro-border {
+  background-color: rgb(188, 193, 214);
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  padding-top: 6%;
+}

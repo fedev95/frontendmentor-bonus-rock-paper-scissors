@@ -1,0 +1,88 @@
+:root {
+  /* primary */
+  --scissors-gradient: hsl(39, 89%, 49%), hsl(40, 84%, 53%);
+  --paper-gradient: hsl(230, 89%, 62%), hsl(230, 89%, 65%);
+  --rock-gradient: hsl(349, 71%, 52%), hsl(349, 70%, 56%);
+  --lizard-gradient: hsl(261, 73%, 60%), hsl(261, 72%, 63%);
+  --spock-gradient: hsl(189, 59%, 53%), hsl(189, 58%, 57%);
+  /* neutral */
+  --dark-text: hsl(229, 25%, 31%);
+  --score-text: hsl(229, 64%, 46%);
+  --header-outline: hsl(217, 16%, 45%);
+  --white: rgb(248, 248, 248);
+  /* background */
+  --bg-gradient: hsl(214, 47%, 23%), hsl(237, 49%, 15%);
+}
+
+* {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.dark-text {
+  color: var(--dark-text);
+}
+
+.score-text {
+  color: var(--score-text);
+}
+
+.white-text {
+  color: var(--white);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.scissors-gradient {
+  background: linear-gradient(to top, var(--scissors-gradient));
+}
+
+.scissors-border {
+  background: rgb(200, 107, 21);
+}
+
+.paper-gradient {
+  background: linear-gradient(to top, var(--paper-gradient));
+}
+
+.paper-border {
+  background: rgb(40,  68, 189);
+}
+
+.rock-gradient {
+  background: linear-gradient(to top, var(--rock-gradient));
+}
+
+.rock-border {
+  background: rgb(157, 22, 50);
+}
+
+.lizard-gradient {
+  background: linear-gradient(to top, var(--lizard-gradient));
+}
+
+.lizard-border {
+  background: rgb(95, 54, 171);
+}
+
+.spock-gradient {
+  background: linear-gradient(to top, var(--spock-gradient));
+}
+
+.spock-border {
+  background: rgb(44, 141, 170);
+}
+
+.background {
+  background: -webkit-radial-gradient(top, var(--bg-gradient));
+  background: radial-gradient(at top, var(--bg-gradient));
+}

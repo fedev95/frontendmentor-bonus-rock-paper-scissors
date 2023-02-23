@@ -1,0 +1,9 @@
+<div *ngIf="hand" [ngClass]="hand.border" class="ficha-border d-flex align-items-center justify-content-center flex-grow-1">
+  <div [ngClass]="hand.gradient" class="ficha">
+    <div class="ficha-centro-border">
+      <div class="ficha-centro">
+        <img [ngClass]="[hand.id == 'lizard'? 'w-50 mb-1' : 'w-40', hand.id == 'spock'? 'ms-2' : '' ]" class="img-fluid" [src]="hand.img" alt="{{hand.id}}">
+      </div>
+    </div>
+  </div>
+</div>

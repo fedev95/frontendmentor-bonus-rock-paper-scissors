@@ -1,0 +1,58 @@
+<div class="container-fluid pb-4">
+  <div class="row justify-content-center">
+    <div class="col-12 p-0">
+      <div class="grid-container">
+
+        <div class="player-text">
+          <p class="fw-600 white-text text-center mt-5 mb-0 hand-text">YOU PICKED</p>
+        </div>
+
+        <div class="player-hand-container">
+          <div class="ficha-container position-relative mt-5">
+
+            <div *ngIf="(result$ | async) === 'you win'" class="position-absolute w-100 aura-container">
+              <div class="position-relative w-100">
+                <div id="aura1" class="aura-circle position-absolute"></div>
+                <div id="aura2" class="aura-circle position-absolute"></div>
+                <div id="aura3" class="aura-circle position-absolute"></div>
+              </div>
+            </div>
+
+            <app-hand [hand]="(playerHand | async)"></app-hand>
+          </div>
+        </div>
+
+        <div class="house-text">
+          <p class="fw-600 white-text text-center mt-5 mb-0 hand-text text-nowrap">THE HOUSE PICKED</p>
+        </div>
+
+        <div class="house-hand-container">
+          <div class="ficha-container position-relative mt-5">
+
+            <div *ngIf="(result$ | async) === 'you lose'" class="position-absolute w-100 aura-container">
+              <div class="position-relative w-100">
+                <div id="aura1" class="aura-circle position-absolute"></div>
+                <div id="aura2" class="aura-circle position-absolute"></div>
+                <div id="aura3" class="aura-circle position-absolute"></div>
+              </div>
+            </div>
+
+            <ng-container *ngIf="houseHand; else handBg">
+              <app-hand [hand]="(houseHand | async)"></app-hand>
+            </ng-container>
+            <ng-template #handBg>
+              <div class="handBg"></div>
+            </ng-template>
+            
+          </div>
+        </div>
+        
+        <div *ngIf="result$ | async" class="result d-flex flex-column align-items-center justify-content-center mt-5">
+          <h1 class="fw-700 white-text text-center">{{result$ | async | uppercase}}</h1>
+          <button class="play-again-btn dark-text text-nowrap fw-600 rounded-3 border-0 py-2 px-3 decoration-none" (click)="playAgain()">PLAY AGAIN</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>

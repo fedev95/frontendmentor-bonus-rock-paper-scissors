@@ -1,0 +1,32 @@
+<div class="container-fluid min-vh-100 p-4 d-flex flex-column justify-content-between overflow-hidden">
+
+  <div class="row justify-content-center m-0 p-0">
+    <div class="col-sm-10 col-md-8 col-lg-6 p-0 d-flex">
+      <div class="d-flex flex-column justify-content-between flex-grow-1">
+        <app-header></app-header>
+      </div>
+    </div>
+  </div>
+
+  <ng-container *ngIf="(comparisonScreen | async); else board">
+    <div class="row justify-content-center m-0 p-0 flex-grow-1">
+      <div class="col-sm-12 col-md-10 col-lg-9 col-xl-8 p-0 d-flex">
+        <div class="d-flex flex-column justify-content-between flex-grow-1">
+          <app-results></app-results>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-template #board>
+    <div class="row justify-content-center m-0 p-0 flex-grow-1">
+      <div class="col-sm-10 col-md-8 col-lg-6 p-0 d-flex">
+        <div class="d-flex flex-column justify-content-between flex-grow-1">
+          <app-board></app-board>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+  
+  <app-rules-modal></app-rules-modal>
+
+</div>
