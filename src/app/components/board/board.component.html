@@ -4,9 +4,9 @@
       <div class="m-auto text-light tablero position-relative">
         <img class="img-fluid w-100 m-auto" src="../../../assets/images/bg-pentagon.svg" alt="background">
         <ng-container *ngFor="let hand of hands">
-          <div (click)="setPlayerHand(hand)" role="button" id="{{hand.id}}" class="ficha-container position-absolute">
+          <button (click)="setPlayerHand(hand)" [attr.aria-label]="'Select ' + hand.id" [id]="hand.id" class="ficha-container position-absolute p-0 border-0">
             <app-hand [hand]="hand"></app-hand>
-          </div>
+          </button>
         </ng-container>
       </div>
     </div>

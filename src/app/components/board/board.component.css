@@ -9,6 +9,7 @@
 .ficha-container {
   align-items: center;
   aspect-ratio: 1/1;
+  background-color: transparent;
   border-radius: 50%;
   display: flex;
   justify-content: center;
