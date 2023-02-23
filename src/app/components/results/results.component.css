@@ -56,7 +56,7 @@
   width: 100%;
 }
 
-.handBg {
+.hand-bg {
   aspect-ratio: 1/1;
   background-color: rgba(0, 0, 0, 0.15);
   border-radius: 50%;
