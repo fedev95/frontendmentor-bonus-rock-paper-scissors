@@ -55,8 +55,12 @@
     margin: 0;
   }
 
-  .grid-container {
+  .modal-content {
     min-height: 100vh;
+  }
+
+  .grid-container {
+    height: 100%;
     grid-template-columns: 1;
     grid-template-rows: repeat(8);
     grid-template-areas:
