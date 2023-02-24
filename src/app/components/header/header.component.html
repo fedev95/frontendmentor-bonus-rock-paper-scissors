@@ -6,7 +6,7 @@
     <div class="col-auto p-3 d-flex">
       <div class="px-0 py-2 rounded-2 score-container bg-white d-flex flex-column align-items-center">
         <p class="m-0 mb-1 fw-700 score-text px-4">S C O R E</p>
-        <h1 class="m-0 px-2 fw-700 dark-text">{{actualScore$ | async}}</h1>
+        <h1 class="m-0 px-2 fw-700 dark-text">{{(actualScore$ | async)! > 999? '+999' : (actualScore$ | async)! < 0? 0 : (actualScore$ | async)}}</h1>
       </div>
     </div>
   </div>
