@@ -47,6 +47,10 @@
   width: 100%;
 }
 
+.play-again-btn:hover {
+  background-color: rgb(224, 224, 224);
+}
+
 .ficha-container {
   align-items: center;
   aspect-ratio: 1/1;
