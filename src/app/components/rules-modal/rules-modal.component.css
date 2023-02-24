@@ -1,4 +1,3 @@
-/* open modal button */
 .rules-button-container {
   display: flex;
   justify-content: flex-end;
@@ -9,7 +8,12 @@
   border: 2px solid var(--header-outline);
 }
 
-/* modal */
+.btn-rules:hover {
+  border: 2px solid var(--white);
+  background-color: var(--white);
+  color: var(--dark-text);
+}
+
 .close-rules-btn {
   width: 25px;
 }
