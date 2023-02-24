@@ -16,6 +16,14 @@
   width: 30%;
 }
 
+.ficha-container:hover {
+  transform: scale(1.03);
+}
+
+.ficha-container:active {
+  transform: scale(1);
+}
+
 #scissors {
   top: 0%;
   left: 35%;
