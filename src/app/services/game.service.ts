@@ -51,7 +51,7 @@ export class GameService {
   comparisonScreen: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
   comparisonScreen$: Observable<boolean> = this.comparisonScreen.asObservable();
 
-  actualScore: BehaviorSubject<number> = new BehaviorSubject<number>(localStorage.getItem('score')? +localStorage.getItem('score')! : 0);
+  actualScore: BehaviorSubject<number> = new BehaviorSubject<number>(0);
   actualScore$: Observable<number> = this.actualScore.asObservable();
 
 
