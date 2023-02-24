@@ -46,10 +46,6 @@
   align-items: center;
 }
 
-.grid-3 > img {
-  width: 100%;
-}
-
 @media (max-width: 375px) {
   .rules-button-container {
     display: flex;
