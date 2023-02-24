@@ -1,6 +1,6 @@
 .grid-container {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  grid-template-columns: minmax(0, 35%) auto minmax(0, 35%);
   grid-auto-columns: auto;
   grid-template-rows: 2;
   grid-column-gap: 5%;
@@ -45,6 +45,7 @@
 .play-again-btn {
   letter-spacing: 2px;
   width: 100%;
+  max-width: 13rem;
 }
 
 .play-again-btn:hover {
@@ -81,7 +82,7 @@
     ;
   }
   .play-again-btn {
-    width: 60%;
+    width: 50%;
   }
 
   .result > h1 {
