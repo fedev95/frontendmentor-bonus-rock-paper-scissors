@@ -49,7 +49,7 @@
         
         <div *ngIf="result$ | async" class="result d-flex flex-column align-items-center justify-content-center mt-5">
           <h1 class="fw-700 white-text text-center">{{result$ | async | uppercase}}</h1>
-          <button class="play-again-btn dark-text text-nowrap fw-600 rounded-3 border-0 py-2 px-3 decoration-none" (click)="playAgain()">PLAY AGAIN</button>
+          <button class="play-again-btn dark-text bg-white text-nowrap fw-600 rounded-3 border-0 py-2 px-3 decoration-none" (click)="playAgain()">PLAY AGAIN</button>
         </div>
         
       </div>
