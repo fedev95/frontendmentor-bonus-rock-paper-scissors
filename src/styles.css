@@ -42,6 +42,10 @@
   background-color: var(--white);
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .scissors-gradient {
   background: linear-gradient(to top, var(--scissors-gradient));
 }
