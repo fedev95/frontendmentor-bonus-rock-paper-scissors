@@ -4,7 +4,7 @@
       <div class="m-auto text-light tablero position-relative">
         <img class="img-fluid w-100 m-auto" src="../../../assets/images/bg-pentagon.svg" alt="background">
         <ng-container *ngFor="let hand of hands">
-          <button (click)="setPlayerHand(hand)" [attr.aria-label]="'Select ' + hand.id" [id]="hand.id" class="ficha-container position-absolute p-0 border-0">
+          <button (click)="setPlayerHand(hand)" [attr.aria-label]="'Select ' + hand.id" [id]="hand.id" class="ficha-container position-absolute p-0 border-0 rounded-circle overflow-hidden">
             <app-hand [hand]="hand"></app-hand>
           </button>
         </ng-container>
