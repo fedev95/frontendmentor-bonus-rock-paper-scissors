@@ -8,9 +8,7 @@ This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](h
   - [The challenge](#the-challenge)
   - [Screenshots](#screenshots)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
+- [Built with](#built-with)
 
 ## Overview
 
@@ -36,9 +34,7 @@ Users should be able to:
 
 - Live Site URL: [https://rock-paper-scissors-47266.web.app](https://rock-paper-scissors-47266.web.app)
 
-## My process
-
-### Built with
+## Built with
 
 - Angular 15
 - Standalone Components
@@ -46,7 +42,3 @@ Users should be able to:
 - CSS custom properties
 - CSS Grid
 - Flexbox
-
-## Author
-
-- Frontend Mentor - [@altoPancho](https://www.frontendmentor.io/profile/altoPancho)
